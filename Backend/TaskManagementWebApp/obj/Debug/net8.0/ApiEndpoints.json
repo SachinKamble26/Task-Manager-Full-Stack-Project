@@ -1,0 +1,450 @@
+[
+  {
+    "ContainingType": "TaskManagementWebApp.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "TaskManagement/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userLogin",
+        "Type": "TaskManagementWebApp.DTO.UserLogInRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManagementWebApp.Controllers.TaskController",
+    "Method": "ChangeCompleteTaskToIncomplete",
+    "RelativePath": "TaskManagement/Task/ChangeCompleteTaskToIncomplete",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "taskId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManagementWebApp.Controllers.TaskController",
+    "Method": "changeTaskPriority",
+    "RelativePath": "TaskManagement/Task/changeTaskPriority",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "taskPriorityId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "taskId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManagementWebApp.Controllers.TaskController",
+    "Method": "completeTask",
+    "RelativePath": "TaskManagement/Task/completeTask",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "taskId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManagementWebApp.Controllers.TaskController",
+    "Method": "createTask",
+    "RelativePath": "TaskManagement/Task/createTask",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "task",
+        "Type": "TaskManagementWebApp.Models.Task",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManagementWebApp.Controllers.TaskController",
+    "Method": "deleteTask",
+    "RelativePath": "TaskManagement/Task/deleteTask",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "taskId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManagementWebApp.Controllers.TaskController",
+    "Method": "filterTaskByCompletionStatusOne",
+    "RelativePath": "TaskManagement/Task/filterTaskByCompletionStatusOne",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManagementWebApp.Controllers.TaskController",
+    "Method": "filterTaskByCompletionStatusZero",
+    "RelativePath": "TaskManagement/Task/filterTaskByCompletionStatusZero",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManagementWebApp.Controllers.TaskController",
+    "Method": "getTask",
+    "RelativePath": "TaskManagement/Task/getTask",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "taskId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManagementWebApp.Controllers.TaskController",
+    "Method": "getTaskListOfAllUsers",
+    "RelativePath": "TaskManagement/Task/getTaskListOfAllUsers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManagementWebApp.Controllers.TaskController",
+    "Method": "getTaskListPerUser",
+    "RelativePath": "TaskManagement/Task/getTaskListPerUser/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManagementWebApp.Controllers.TaskController",
+    "Method": "setReminder",
+    "RelativePath": "TaskManagement/Task/setReminder",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "setReminderRequestDTO",
+        "Type": "TaskManagementWebApp.DTO.SetReminderRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManagementWebApp.Controllers.TaskController",
+    "Method": "sortTaskByDueDate",
+    "RelativePath": "TaskManagement/Task/sortTaskByDueDate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManagementWebApp.Controllers.TaskController",
+    "Method": "updateTask",
+    "RelativePath": "TaskManagement/Task/updateTask",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "taskId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "task",
+        "Type": "TaskManagementWebApp.Models.Task",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManagementWebApp.Controllers.UserController",
+    "Method": "addAdmin",
+    "RelativePath": "TaskManagement/User/addAdmin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "TaskManagementWebApp.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManagementWebApp.Controllers.UserController",
+    "Method": "authenticateUser",
+    "RelativePath": "TaskManagement/User/authenticateUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userLogInRequestDTO",
+        "Type": "TaskManagementWebApp.DTO.UserLogInRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManagementWebApp.Controllers.UserController",
+    "Method": "deleteUser",
+    "RelativePath": "TaskManagement/User/deleteUser",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManagementWebApp.Controllers.UserController",
+    "Method": "getAdminList",
+    "RelativePath": "TaskManagement/User/getAdminList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManagementWebApp.Controllers.UserController",
+    "Method": "getUser",
+    "RelativePath": "TaskManagement/User/getUser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManagementWebApp.Controllers.UserController",
+    "Method": "getUserList",
+    "RelativePath": "TaskManagement/User/getUserList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManagementWebApp.Controllers.UserController",
+    "Method": "getUserName",
+    "RelativePath": "TaskManagement/User/getUserName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManagementWebApp.Controllers.UserController",
+    "Method": "registerUser",
+    "RelativePath": "TaskManagement/User/registerUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "TaskManagementWebApp.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManagementWebApp.Controllers.UserController",
+    "Method": "resetPasswordUsingDob",
+    "RelativePath": "TaskManagement/User/resetPasswordUsingDob",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "resetPasswordRequestDTO",
+        "Type": "TaskManagementWebApp.DTO.ResetPasswordRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManagementWebApp.Controllers.UserController",
+    "Method": "resetPasswordUsingMobileNo",
+    "RelativePath": "TaskManagement/User/resetPasswordUsingMobileno",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "resetPasswordUsingMobileNoRequestDTO",
+        "Type": "TaskManagementWebApp.DTO.ResetPasswordUsingMobileNoRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManagementWebApp.Controllers.UserController",
+    "Method": "updateUser",
+    "RelativePath": "TaskManagement/User/updateUser",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "TaskManagementWebApp.Models.User",
+        "IsRequired": true
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManagementWebApp.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[TaskManagementWebApp.WeatherForecast, TaskManagementWebApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

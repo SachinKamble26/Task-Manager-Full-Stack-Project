@@ -1,0 +1,832 @@
+{
+	"info": {
+		"_postman_id": "f9fabaaa-0a85-44de-ae31-e81f80a3740d",
+		"name": "Task Management Application Assignment By Xpress Money",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40167289"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Register User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"mahesh\",\r\n  \"email\": \"mahesh@gmail.com\",\r\n  \"password\": \"mahesh#123\",\r\n  \"dob\": \"2001-01-26\",\r\n  \"mobileNo\": \"1728288897\",\r\n  \"address\": \"nanded\",\r\n  \"role\": \"user\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7127/TaskManagement/User/registerUser",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7127",
+							"path": [
+								"TaskManagement",
+								"User",
+								"registerUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All User List",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var template = `\r",
+									"<canvas id=\"userChart\" height=\"75\"></canvas>\r",
+									"\r",
+									"<script src=\"https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js\"></script> \r",
+									"\r",
+									"<script>\r",
+									"    var ctx = document.getElementById(\"userChart\");\r",
+									"\r",
+									"    var userChart = new Chart(ctx, {\r",
+									"        type: \"bar\",\r",
+									"        data: {\r",
+									"            labels: [],\r",
+									"            datasets: [{\r",
+									"                data: [],\r",
+									"                \r",
+									"                // Change these colours to customize the chart\r",
+									"                backgroundColor: [\"#003f5c\", \"#58508d\", \"#bc5090\", \"#ff6361\", \"#ffa600\"],\r",
+									"            }]\r",
+									"        },\r",
+									"        options: {\r",
+									"            legend: { display: false },\r",
+									"            title: {\r",
+									"                display: true,\r",
+									"                text: 'User Data'\r",
+									"            },\r",
+									"            scales: {\r",
+									"                xAxes: [{\r",
+									"                    display: true,\r",
+									"                    scaleLabel: {\r",
+									"                        display: true,\r",
+									"                        labelString: 'User ID'\r",
+									"                    }\r",
+									"                }],\r",
+									"                yAxes: [{\r",
+									"                    display: true,\r",
+									"                    scaleLabel: {\r",
+									"                        display: true,\r",
+									"                        labelString: 'Count'\r",
+									"                    }\r",
+									"                }]\r",
+									"            }\r",
+									"        }\r",
+									"\r",
+									"    });\r",
+									"\r",
+									"    // Access the data passed to pm.visualizer.set() from the JavaScript\r",
+									"    // code of the Visualizer template\r",
+									"    pm.getData(function (err, value) {\r",
+									"        userChart.data.datasets[0].data = value.response.map(user => user.userId);\r",
+									"        userChart.data.labels = value.response.map(user => user.name);\r",
+									"        userChart.update();\r",
+									"    });\r",
+									"\r",
+									"</script>`;\r",
+									"\r",
+									"function constructVisualizerPayload() {\r",
+									"    var res = pm.response.json();\r",
+									"    \r",
+									"    var visualizerData = res.filter(user => user.userId !== undefined && user.name !== undefined);\r",
+									"    \r",
+									"    return {response: visualizerData};\r",
+									"}\r",
+									"\r",
+									"pm.visualizer.set(template, constructVisualizerPayload());"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWNoaW5AZ21haWwuY29tIiwianRpIjoiY2E1MGQyYmEtMWE2OS00NWYwLThiZDgtMzI1MjlmOTk0ZWIzIiwidXNlcklkIjoiMSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6InVzZXIiLCJleHAiOjE3NDQ3MTc0NDB9.-Qe70joLdsxwQPDUHRM-fbpsH4pkfJkGVW4nIPaKbG0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7127/TaskManagement/User/getUserList",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7127",
+							"path": [
+								"TaskManagement",
+								"User",
+								"getUserList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7127/TaskManagement/User/deleteUser?userId=99",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7127",
+							"path": [
+								"TaskManagement",
+								"User",
+								"deleteUser"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "99"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Authenticate-Login User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"abc@gmail.com\",\r\n  \"password\": \"abc#123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7127/TaskManagement/User/authenticateUser",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7127",
+							"path": [
+								"TaskManagement",
+								"User",
+								"authenticateUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reset Password Using Dob",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"email\": \"abc@gmail.com\",\r\n  \"dob\": \"2025-04-08\",\r\n  \"newPassword\": \"abc#123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7127/TaskManagement/User/resetPasswordUsingDob",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7127",
+							"path": [
+								"TaskManagement",
+								"User",
+								"resetPasswordUsingDob"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7127/TaskManagement/User/getUser?userId=7",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7127",
+							"path": [
+								"TaskManagement",
+								"User",
+								"getUser"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"sachin\",\r\n  \"email\": \"sachin@gmail.com\",\r\n  \"password\": \"sachin#123\",\r\n  \"dob\": \"2025-04-11\",\r\n  \"mobileNo\": \"9876543228\",\r\n  \"address\": \"pune\",\r\n  \"role\": \"user\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7127/TaskManagement/User/updateUser?userId=1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7127",
+							"path": [
+								"TaskManagement",
+								"User",
+								"updateUser"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Admin List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7127/TaskManagement/User/getAdminList",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7127",
+							"path": [
+								"TaskManagement",
+								"User",
+								"getAdminList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Name",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Add Admin",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"string\",\r\n  \"email\": \"string\",\r\n  \"password\": \"string\",\r\n  \"dob\": \"2025-04-13\",\r\n  \"mobileNo\": \"string\",\r\n  \"address\": \"string\",\r\n  \"role\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7127/TaskManagement/User/addAdmin",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7127",
+							"path": [
+								"TaskManagement",
+								"User",
+								"addAdmin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "JWT Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"sachin@gmail.com\",\r\n  \"password\": \"sachin#123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7127/TaskManagement/Auth/login",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7127",
+							"path": [
+								"TaskManagement",
+								"Auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reset Password Using Mobile No",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"email\": \"abc@gmail.com\",\r\n  \"mobileNo\": \"1234567890\",\r\n  \"newPassword\": \"abc#123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7127/TaskManagement/User/resetPasswordUsingMobileno",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7127",
+							"path": [
+								"TaskManagement",
+								"User",
+								"resetPasswordUsingMobileno"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Task",
+			"item": [
+				{
+					"name": "Create Task",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"title 7\",\r\n  \"description\": \"desc 7\",\r\n  \"dueDate\": \"2025-04-08\",\r\n  \"isCompleted\": false,\r\n  \"userId\": 1,\r\n  \"taskPriorityId\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7127/TaskManagement/Task/createTask",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7127",
+							"path": [
+								"TaskManagement",
+								"Task",
+								"createTask"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Task List Of All Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7127/TaskManagement/Task/getTaskListOfAllUsers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7127",
+							"path": [
+								"TaskManagement",
+								"Task",
+								"getTaskListOfAllUsers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Task List Per User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7127/TaskManagement/Task/getTaskListPerUser/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7127",
+							"path": [
+								"TaskManagement",
+								"Task",
+								"getTaskListPerUser",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Filter Task By Completion Status One",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7127/TaskManagement/Task/filterTaskByCompletionStatusOne?userId=1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7127",
+							"path": [
+								"TaskManagement",
+								"Task",
+								"filterTaskByCompletionStatusOne"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sort Task By Due Date",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7127/TaskManagement/Task/sortTaskByDueDate?userId=1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7127",
+							"path": [
+								"TaskManagement",
+								"Task",
+								"sortTaskByDueDate"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Task",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7127/TaskManagement/Task/deleteTask?taskId=6&userId=1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7127",
+							"path": [
+								"TaskManagement",
+								"Task",
+								"deleteTask"
+							],
+							"query": [
+								{
+									"key": "taskId",
+									"value": "6"
+								},
+								{
+									"key": "userId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Task",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"title 5 updated\",\r\n  \"description\": \"description 5 updated\",\r\n  \"dueDate\": \"2025-04-08T07:19:25.751Z\",\r\n  \"isCompleted\": true,\r\n  \"userId\": 1,\r\n  \"taskPriorityId\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7127/TaskManagement/Task/updateTask?taskId=5&userId=1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7127",
+							"path": [
+								"TaskManagement",
+								"Task",
+								"updateTask"
+							],
+							"query": [
+								{
+									"key": "taskId",
+									"value": "5"
+								},
+								{
+									"key": "userId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Task Priority",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7127/TaskManagement/Task/changeTaskPriority?taskPriorityId=1&taskId=4&userId=1\n",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7127",
+							"path": [
+								"TaskManagement",
+								"Task",
+								"changeTaskPriority"
+							],
+							"query": [
+								{
+									"key": "taskPriorityId",
+									"value": "1"
+								},
+								{
+									"key": "taskId",
+									"value": "4"
+								},
+								{
+									"key": "userId",
+									"value": "1\n"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InComplete Task To Complete",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7127/TaskManagement/Task/completeTask?taskId=5&userId=1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7127",
+							"path": [
+								"TaskManagement",
+								"Task",
+								"completeTask"
+							],
+							"query": [
+								{
+									"key": "taskId",
+									"value": "5"
+								},
+								{
+									"key": "userId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Filter Task By Completion Status Zero",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7127/TaskManagement/Task/filterTaskByCompletionStatusZero?userId=1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7127",
+							"path": [
+								"TaskManagement",
+								"Task",
+								"filterTaskByCompletionStatusZero"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Complete Task To Incomplete",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7127/TaskManagement/Task/ChangeCompleteTaskToIncomplete?taskId=5&userId=1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7127",
+							"path": [
+								"TaskManagement",
+								"Task",
+								"ChangeCompleteTaskToIncomplete"
+							],
+							"query": [
+								{
+									"key": "taskId",
+									"value": "5"
+								},
+								{
+									"key": "userId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Task",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7127/TaskManagement/Task/getTask?taskId=3&userId=1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7127",
+							"path": [
+								"TaskManagement",
+								"Task",
+								"getTask"
+							],
+							"query": [
+								{
+									"key": "taskId",
+									"value": "3"
+								},
+								{
+									"key": "userId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Set Reminder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"reminderDate\": \"2025-04-17\",\r\n  \"reminderTime\": \"16:16\",\r\n  \"userId\": 27,\r\n  \"taskId\": 62\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7127/TaskManagement/Task/setReminder",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7127",
+							"path": [
+								"TaskManagement",
+								"Task",
+								"setReminder"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
