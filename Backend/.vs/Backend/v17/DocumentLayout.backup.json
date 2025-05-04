@@ -1,12 +1,71 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\Documents\\My Projects\\Angular Dotnet\\Task-Manager-Full-Stack-Project\\Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|c:\\users\\asus\\documents\\my projects\\angular dotnet\\task-manager-full-stack-project\\backend\\taskmanagementwebapp\\appsettings.local.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|solutionrelative:taskmanagementwebapp\\appsettings.local.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|c:\\users\\asus\\documents\\my projects\\angular dotnet\\task-manager-full-stack-project\\backend\\taskmanagementwebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|solutionrelative:taskmanagementwebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|c:\\users\\asus\\documents\\my projects\\angular dotnet\\task-manager-full-stack-project\\backend\\taskmanagementwebapp\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|solutionrelative:taskmanagementwebapp\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.Local.json",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\My Projects\\Angular Dotnet\\Task-Manager-Full-Stack-Project\\Backend\\TaskManagementWebApp\\appsettings.Local.json",
+              "RelativeDocumentMoniker": "TaskManagementWebApp\\appsettings.Local.json",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\My Projects\\Angular Dotnet\\Task-Manager-Full-Stack-Project\\Backend\\TaskManagementWebApp\\appsettings.Local.json",
+              "RelativeToolTip": "TaskManagementWebApp\\appsettings.Local.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-04T12:41:18.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\My Projects\\Angular Dotnet\\Task-Manager-Full-Stack-Project\\Backend\\TaskManagementWebApp\\appsettings.json",
+              "RelativeDocumentMoniker": "TaskManagementWebApp\\appsettings.json",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\My Projects\\Angular Dotnet\\Task-Manager-Full-Stack-Project\\Backend\\TaskManagementWebApp\\appsettings.json",
+              "RelativeToolTip": "TaskManagementWebApp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAB2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-04T12:40:54.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\My Projects\\Angular Dotnet\\Task-Manager-Full-Stack-Project\\Backend\\TaskManagementWebApp\\.gitignore",
+              "RelativeDocumentMoniker": "TaskManagementWebApp\\.gitignore",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\My Projects\\Angular Dotnet\\Task-Manager-Full-Stack-Project\\Backend\\TaskManagementWebApp\\.gitignore",
+              "RelativeToolTip": "TaskManagementWebApp\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-04T12:04:46.079Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
