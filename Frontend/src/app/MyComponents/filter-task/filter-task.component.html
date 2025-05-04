@@ -60,7 +60,7 @@
             {{task.isCompleted ? 'Completed':'Pending'  }}</button>
     </td>
 
-    <th>
+    <th  class="text-center">
        
         <button type="button"  class="btn btn-info "    [routerLink]="['/viewTask',task.taskId,task.userId]"    >View</button>
         <button  type="button"  class="btn btn-warning ms-2 "   [routerLink]="['/editTask', task.taskId, task.userId]"   >Edit</button>
