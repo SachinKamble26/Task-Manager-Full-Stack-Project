@@ -16,8 +16,33 @@ namespace TaskManagementWebApp.Controllers
     {
 
 
-        private TaskDaoImpl taskDao = new TaskDaoImpl();
-        private UserDao userDao = new UserDaoImpl();    
+        //private TaskDaoImpl taskDao = new TaskDaoImpl();
+        //private UserDao userDao = new UserDaoImpl();
+
+
+        private TaskDao taskDao = null;
+        private UserDao userDao = null;
+
+
+
+
+        public TaskController(TaskDao taskDao,UserDao userDao)
+        {
+            this.taskDao = taskDao;
+            this.userDao = userDao; 
+
+        }
+
+
+
+
+
+
+
+
+
+
+
 
         //[Authorize]
         [HttpPost("createTask")]

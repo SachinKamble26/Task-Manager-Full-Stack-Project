@@ -9,9 +9,20 @@ namespace TaskManagementWebApp.Dao
     public class UserDaoImpl : UserDao
     {
 
-        private string connectionString = "Data Source=localhost\\sqlexpress01;Initial Catalog=TaskManagement;Integrated Security=True;Encrypt=False";
+        //private string connectionString = "Data Source=localhost\\sqlexpress01;Initial Catalog=TaskManagement;Integrated Security=True;Encrypt=False";
 
-     
+        private readonly string? connectionString ;
+        private TaskDao taskDao;
+
+
+        public UserDaoImpl(IConfiguration configuration,TaskDao taskadao)
+        {
+            this.connectionString = configuration.GetConnectionString("DefaultConnection");
+            this.taskDao = taskadao;
+
+        }
+
+
 
         public string registerUser(User user)
         {
@@ -48,7 +59,7 @@ namespace TaskManagementWebApp.Dao
 
         public string deleteUser(int userId)
         {
-            TaskDaoImpl taskDao = new TaskDaoImpl();
+            //TaskDaoImpl taskDao = new TaskDaoImpl();  inject using depenedency injection
             string result=taskDao.deleteAllTask(userId);
             Console.WriteLine(result);  
             try

@@ -15,12 +15,15 @@ namespace TaskManagementWebApp.Controllers
     public class AuthController : Controller
     {
 
-        private UserDaoImpl userDao = new UserDaoImpl();
+
+        //private UserDao userDao = new UserDaoImpl();
+        private UserDao userDao = null;
         private readonly string _key;
 
-        public AuthController(IConfiguration config)
+        public AuthController(IConfiguration config,UserDao userDao) // called Dependency Injection
         {
             _key = "kSWSd1ZE4g4SrqGe89nmogPiS0CYpvh7";
+            this.userDao = userDao;
         }
 
         // POST /api/auth/login

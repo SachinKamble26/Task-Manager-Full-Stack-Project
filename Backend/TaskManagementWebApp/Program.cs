@@ -6,13 +6,14 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
+using TaskManagementWebApp.Dao;
 
 namespace TaskManagementWebApp
 {
     public class Program
     {
 
-
+        // testing .gitignore changes made on dell
 
 
 
@@ -123,10 +124,27 @@ namespace TaskManagementWebApp
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            //--------------------------------------------------------------------------------
+
+            builder.Configuration.AddJsonFile("appsettings.json",optional:false,reloadOnChange:true);
+            builder.Configuration.AddJsonFile("appsettings.Local.json",optional:true,reloadOnChange:true);
+
+            //--------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
             //-------------------------------------------------------------------------------------------------
             // string key  kSWSd1ZE4g4SrqGe89nmogPiS0CYpvh7
 
-           
+
 
 
 
@@ -177,7 +195,8 @@ namespace TaskManagementWebApp
 
 
 
-
+            builder.Services.AddScoped<UserDao,UserDaoImpl>();  // means when anywhere needed userdao interface instance then provide userdaoimpl class instance
+            builder.Services.AddScoped<TaskDao,TaskDaoImpl>();  // means when anywhere needed taskdao interface instance then provide taskdaoimpl class instance
 
             var app = builder.Build();
 

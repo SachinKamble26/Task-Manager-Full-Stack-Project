@@ -100,3 +100,5 @@ C:\Users\SachinKamble\Documents\Task Management System Project\Backend\TaskManag
 C:\Users\SachinKamble\Documents\Task Management System Project\Backend\TaskManagementWebApp\bin\Debug\net8.0\tr-TR\Hangfire.Core.resources.dll
 C:\Users\SachinKamble\Documents\Task Management System Project\Backend\TaskManagementWebApp\bin\Debug\net8.0\zh-TW\Hangfire.Core.resources.dll
 C:\Users\SachinKamble\Documents\Task Management System Project\Backend\TaskManagementWebApp\bin\Debug\net8.0\zh\Hangfire.Core.resources.dll
+C:\Users\SachinKamble\Documents\Task Management System Project\Backend\TaskManagementWebApp\bin\Debug\net8.0\appsettings.Local.json
+C:\Users\SachinKamble\Documents\Task Management System Project\Backend\TaskManagementWebApp\obj\Debug\net8.0\TaskManagementWebApp.sourcelink.json

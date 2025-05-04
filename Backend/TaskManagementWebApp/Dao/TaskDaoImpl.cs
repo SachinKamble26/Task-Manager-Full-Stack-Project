@@ -8,9 +8,23 @@ namespace TaskManagementWebApp.Dao
     public class TaskDaoImpl : TaskDao
     {
 
-        private string connectionString = "Data Source=localhost\\sqlexpress01;Initial Catalog=TaskManagement;Integrated Security=True;Encrypt=False";
+        //private string connectionString = "Data Source=localhost\\sqlexpress01;Initial Catalog=TaskManagement;Integrated Security=True;Encrypt=False";
 
-   
+        private readonly string? connectionString ;
+
+
+
+        public TaskDaoImpl(IConfiguration configuration)
+        {
+            this.connectionString = configuration.GetConnectionString("DefaultConnection");
+        }
+
+
+
+
+
+
+
 
         public string createTask(Models.Task task)
         {

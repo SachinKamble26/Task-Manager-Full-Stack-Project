@@ -11,7 +11,25 @@ namespace TaskManagementWebApp.Controllers
     public class UserController : Controller
     {
 
-        private UserDaoImpl userDao=new UserDaoImpl();
+        //private UserDaoImpl userDao=new UserDaoImpl();
+
+
+
+     
+        private UserDao userDao = null;
+
+
+
+
+        public UserController(UserDao userDao)
+        {
+          
+            this.userDao = userDao;
+
+        }
+
+
+
 
 
 

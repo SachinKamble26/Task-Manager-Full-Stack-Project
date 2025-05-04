@@ -3,32 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|c:\\users\\sachinkamble\\documents\\task management system project\\backend\\taskmanagementwebapp\\taskmanagementwebapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|solutionrelative:taskmanagementwebapp\\taskmanagementwebapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|c:\\users\\sachinkamble\\documents\\task management system project\\backend\\taskmanagementwebapp\\service\\reminderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|solutionrelative:taskmanagementwebapp\\service\\reminderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|c:\\users\\sachinkamble\\documents\\task management system project\\backend\\taskmanagementwebapp\\dao\\userdaoimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|solutionrelative:taskmanagementwebapp\\dao\\userdaoimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|c:\\users\\sachinkamble\\documents\\task management system project\\backend\\taskmanagementwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|solutionrelative:taskmanagementwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|c:\\users\\sachinkamble\\documents\\task management system project\\backend\\taskmanagementwebapp\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|solutionrelative:taskmanagementwebapp\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|c:\\users\\sachinkamble\\documents\\task management system project\\backend\\taskmanagementwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|solutionrelative:taskmanagementwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|c:\\users\\sachinkamble\\documents\\task management system project\\backend\\taskmanagementwebapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|solutionrelative:taskmanagementwebapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|c:\\users\\sachinkamble\\documents\\task management system project\\backend\\taskmanagementwebapp\\models\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|solutionrelative:taskmanagementwebapp\\models\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|c:\\users\\sachinkamble\\documents\\task management system project\\backend\\taskmanagementwebapp\\appsettings.local.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|solutionrelative:taskmanagementwebapp\\appsettings.local.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|c:\\users\\sachinkamble\\documents\\task management system project\\backend\\taskmanagementwebapp\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|solutionrelative:taskmanagementwebapp\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|c:\\users\\sachinkamble\\documents\\task management system project\\backend\\taskmanagementwebapp\\taskmanagementwebapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|solutionrelative:taskmanagementwebapp\\taskmanagementwebapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|c:\\users\\sachinkamble\\documents\\task management system project\\backend\\taskmanagementwebapp\\dao\\userdaoimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|solutionrelative:taskmanagementwebapp\\dao\\userdaoimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|c:\\users\\sachinkamble\\documents\\task management system project\\backend\\taskmanagementwebapp\\dao\\taskdaoimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|solutionrelative:taskmanagementwebapp\\dao\\taskdaoimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|c:\\users\\sachinkamble\\documents\\task management system project\\backend\\taskmanagementwebapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|solutionrelative:taskmanagementwebapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|c:\\users\\sachinkamble\\documents\\task management system project\\backend\\taskmanagementwebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|solutionrelative:taskmanagementwebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|c:\\users\\sachinkamble\\documents\\task management system project\\backend\\taskmanagementwebapp\\service\\reminderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|solutionrelative:taskmanagementwebapp\\service\\reminderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|c:\\users\\sachinkamble\\documents\\task management system project\\backend\\taskmanagementwebapp\\models\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|solutionrelative:taskmanagementwebapp\\models\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|c:\\users\\sachinkamble\\documents\\task management system project\\backend\\taskmanagementwebapp\\dao\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,18 +69,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|c:\\users\\sachinkamble\\documents\\task management system project\\backend\\taskmanagementwebapp\\dto\\resetpasswordrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|solutionrelative:taskmanagementwebapp\\dto\\resetpasswordrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|c:\\users\\sachinkamble\\documents\\task management system project\\backend\\taskmanagementwebapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|solutionrelative:taskmanagementwebapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|c:\\users\\sachinkamble\\documents\\task management system project\\backend\\taskmanagementwebapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|solutionrelative:taskmanagementwebapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|c:\\users\\sachinkamble\\documents\\task management system project\\backend\\taskmanagementwebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|solutionrelative:taskmanagementwebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{68DB3476-3C05-43FE-9419-3DAD3BA1FF5B}|TaskManagementWebApp\\TaskManagementWebApp.csproj|c:\\users\\sachinkamble\\documents\\task management system project\\backend\\taskmanagementwebapp\\dao\\taskdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -92,74 +100,141 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\Program.cs",
               "RelativeDocumentMoniker": "TaskManagementWebApp\\Program.cs",
               "ToolTip": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\Program.cs",
               "RelativeToolTip": "TaskManagementWebApp\\Program.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAwNIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T05:52:20.598Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ReminderService.cs",
-              "DocumentMoniker": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\Service\\ReminderService.cs",
-              "RelativeDocumentMoniker": "TaskManagementWebApp\\Service\\ReminderService.cs",
-              "ToolTip": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\Service\\ReminderService.cs",
-              "RelativeToolTip": "TaskManagementWebApp\\Service\\ReminderService.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAADIAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T05:33:08.775Z",
+              "WhenOpened": "2025-04-09T05:52:20.598Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TaskController.cs",
-              "DocumentMoniker": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\Controllers\\TaskController.cs",
-              "RelativeDocumentMoniker": "TaskManagementWebApp\\Controllers\\TaskController.cs",
-              "ToolTip": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\Controllers\\TaskController.cs",
-              "RelativeToolTip": "TaskManagementWebApp\\Controllers\\TaskController.cs",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAowIAAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T17:14:08.656Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SetReminderRequestDTO.cs",
-              "DocumentMoniker": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\DTO\\SetReminderRequestDTO.cs",
-              "RelativeDocumentMoniker": "TaskManagementWebApp\\DTO\\SetReminderRequestDTO.cs",
-              "ToolTip": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\DTO\\SetReminderRequestDTO.cs",
-              "RelativeToolTip": "TaskManagementWebApp\\DTO\\SetReminderRequestDTO.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAIAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T10:15:40.275Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "TaskManagementWebApp\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "TaskManagementWebApp\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T17:46:07.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "TaskManagementWebApp\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\Controllers\\UserController.cs",
+              "RelativeToolTip": "TaskManagementWebApp\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAiwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T17:41:13.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TaskDaoImpl.cs",
+              "DocumentMoniker": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\Dao\\TaskDaoImpl.cs",
+              "RelativeDocumentMoniker": "TaskManagementWebApp\\Dao\\TaskDaoImpl.cs",
+              "ToolTip": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\Dao\\TaskDaoImpl.cs",
+              "RelativeToolTip": "TaskManagementWebApp\\Dao\\TaskDaoImpl.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAiwBIAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T05:11:24.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "UserDaoImpl.cs",
               "DocumentMoniker": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\Dao\\UserDaoImpl.cs",
               "RelativeDocumentMoniker": "TaskManagementWebApp\\Dao\\UserDaoImpl.cs",
               "ToolTip": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\Dao\\UserDaoImpl.cs",
               "RelativeToolTip": "TaskManagementWebApp\\Dao\\UserDaoImpl.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAQwFcAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwD0AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-06T17:04:49.534Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
+              "Title": "TaskManagementWebApp.csproj",
+              "DocumentMoniker": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\TaskManagementWebApp.csproj",
+              "RelativeDocumentMoniker": "TaskManagementWebApp\\TaskManagementWebApp.csproj",
+              "ToolTip": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\TaskManagementWebApp.csproj",
+              "RelativeToolTip": "TaskManagementWebApp\\TaskManagementWebApp.csproj",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAYwAkAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-08T10:17:15.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TaskController.cs",
+              "DocumentMoniker": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\Controllers\\TaskController.cs",
+              "RelativeDocumentMoniker": "TaskManagementWebApp\\Controllers\\TaskController.cs",
+              "ToolTip": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\Controllers\\TaskController.cs",
+              "RelativeToolTip": "TaskManagementWebApp\\Controllers\\TaskController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAiwB4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T17:14:08.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.Local.json",
+              "DocumentMoniker": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\appsettings.Local.json",
+              "RelativeDocumentMoniker": "TaskManagementWebApp\\appsettings.Local.json",
+              "ToolTip": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\appsettings.Local.json",
+              "RelativeToolTip": "TaskManagementWebApp\\appsettings.Local.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-04T11:05:47.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\.gitignore",
+              "RelativeDocumentMoniker": "TaskManagementWebApp\\.gitignore",
+              "ToolTip": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\.gitignore",
+              "RelativeToolTip": "TaskManagementWebApp\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-04T11:32:11.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\appsettings.json",
+              "RelativeDocumentMoniker": "TaskManagementWebApp\\appsettings.json",
+              "ToolTip": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\appsettings.json",
+              "RelativeToolTip": "TaskManagementWebApp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-16T05:27:23.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\Models\\User.cs",
               "RelativeDocumentMoniker": "TaskManagementWebApp\\Models\\User.cs",
@@ -171,32 +246,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TaskDaoImpl.cs",
-              "DocumentMoniker": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\Dao\\TaskDaoImpl.cs",
-              "RelativeDocumentMoniker": "TaskManagementWebApp\\Dao\\TaskDaoImpl.cs",
-              "ToolTip": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\Dao\\TaskDaoImpl.cs",
-              "RelativeToolTip": "TaskManagementWebApp\\Dao\\TaskDaoImpl.cs",
-              "ViewState": "AgIAANABAAAAAAAAAAAowOMBAAAYAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "SetReminderRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\DTO\\SetReminderRequestDTO.cs",
+              "RelativeDocumentMoniker": "TaskManagementWebApp\\DTO\\SetReminderRequestDTO.cs",
+              "ToolTip": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\DTO\\SetReminderRequestDTO.cs",
+              "RelativeToolTip": "TaskManagementWebApp\\DTO\\SetReminderRequestDTO.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T05:11:24.785Z"
+              "WhenOpened": "2025-04-17T10:15:40.275Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TaskManagementWebApp.csproj",
-              "DocumentMoniker": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\TaskManagementWebApp.csproj",
-              "RelativeDocumentMoniker": "TaskManagementWebApp\\TaskManagementWebApp.csproj",
-              "ToolTip": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\TaskManagementWebApp.csproj",
-              "RelativeToolTip": "TaskManagementWebApp\\TaskManagementWebApp.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-08T10:17:15.181Z",
-              "EditorCaption": ""
+              "DocumentIndex": 10,
+              "Title": "ReminderService.cs",
+              "DocumentMoniker": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\Service\\ReminderService.cs",
+              "RelativeDocumentMoniker": "TaskManagementWebApp\\Service\\ReminderService.cs",
+              "ToolTip": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\Service\\ReminderService.cs",
+              "RelativeToolTip": "TaskManagementWebApp\\Service\\ReminderService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T05:33:08.775Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "UserDao.cs",
               "DocumentMoniker": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\Dao\\UserDao.cs",
               "RelativeDocumentMoniker": "TaskManagementWebApp\\Dao\\UserDao.cs",
@@ -208,7 +282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "Task.cs",
               "DocumentMoniker": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\Models\\Task.cs",
               "RelativeDocumentMoniker": "TaskManagementWebApp\\Models\\Task.cs",
@@ -220,7 +294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "ResetPasswordUsingMobileNoRequestDTO.cs",
               "DocumentMoniker": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\DTO\\ResetPasswordUsingMobileNoRequestDTO.cs",
               "RelativeDocumentMoniker": "TaskManagementWebApp\\DTO\\ResetPasswordUsingMobileNoRequestDTO.cs",
@@ -232,7 +306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "ResetPasswordRequestDTO.cs",
               "DocumentMoniker": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\DTO\\ResetPasswordRequestDTO.cs",
               "RelativeDocumentMoniker": "TaskManagementWebApp\\DTO\\ResetPasswordRequestDTO.cs",
@@ -244,43 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "TaskManagementWebApp\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "TaskManagementWebApp\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T17:46:07.018Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "TaskManagementWebApp\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\Controllers\\UserController.cs",
-              "RelativeToolTip": "TaskManagementWebApp\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAJwAAABeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T17:41:13.45Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\appsettings.json",
-              "RelativeDocumentMoniker": "TaskManagementWebApp\\appsettings.json",
-              "ToolTip": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\appsettings.json",
-              "RelativeToolTip": "TaskManagementWebApp\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-16T05:27:23.48Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "TaskDao.cs",
               "DocumentMoniker": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\Dao\\TaskDao.cs",
               "RelativeDocumentMoniker": "TaskManagementWebApp\\Dao\\TaskDao.cs",
@@ -292,7 +330,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "UserLoginResponseDTO.cs",
               "DocumentMoniker": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\DTO\\UserLoginResponseDTO.cs",
               "RelativeDocumentMoniker": "TaskManagementWebApp\\DTO\\UserLoginResponseDTO.cs",
@@ -304,7 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "UserLogInRequestDTO.cs",
               "DocumentMoniker": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\DTO\\UserLogInRequestDTO.cs",
               "RelativeDocumentMoniker": "TaskManagementWebApp\\DTO\\UserLogInRequestDTO.cs",
@@ -316,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "TaskPriority.cs",
               "DocumentMoniker": "C:\\Users\\SachinKamble\\Documents\\Task Management System Project\\Backend\\TaskManagementWebApp\\Models\\TaskPriority.cs",
               "RelativeDocumentMoniker": "TaskManagementWebApp\\Models\\TaskPriority.cs",
@@ -328,7 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "dbo.User.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/localhost_sqlexpress01/TaskManagement/True/SqlTable/dbo.User.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/localhost_sqlexpress01/TaskManagement/True/SqlTable/dbo.User.sql",
@@ -337,7 +375,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "dbo.Task.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/localhost_sqlexpress01/TaskManagement/True/SqlTable/dbo.Task.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/localhost_sqlexpress01/TaskManagement/True/SqlTable/dbo.Task.sql",
