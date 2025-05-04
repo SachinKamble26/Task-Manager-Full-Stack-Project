@@ -1,2 +1,13 @@
+# ignore local database file
 appsettings.Local.json
+
+# Visual Studio
 .vs/
+
+# Build output
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
