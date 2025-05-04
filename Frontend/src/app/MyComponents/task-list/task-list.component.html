@@ -1,0 +1,99 @@
+
+
+<div class="container  mt-5"    >
+
+    <div style="display: flex; justify-content: space-between;  " >
+        <h3 class="text-center" >Task List</h3>   
+        
+        
+        <div class="search-bar ms-5 me-5" style="flex-grow: 1; margin-right: 0px;">
+
+            <input type="text" placeholder="search by title and description . . ." class="form-control" [(ngModel)]="searchQuery" (input)="filterTasks()"   />
+        </div>
+        
+        
+        
+        <button type="button" routerLink="/addTask" style="margin-top:-6px;"  class="btn btn-primary  btn-lg" > + Add Task</button>
+  
+    </div>
+     <hr>
+<table class="table table-bordered  table-hover" >
+<!--  #f5f5f5 light gray -->
+  <!-- #e8f0fe  -->
+<!-- <thead  style="color:black ;  background-color: rgb(242, 230, 242); "   > -->
+    <thead    style="color:black ;  background-color: #f5f5f5; "   >
+<th  >Sr No</th>
+<th  class="text-center" >Title</th>
+<!-- <th>Description</th> -->
+<th class="text-center" >Due Date</th>
+<th class="text-center" >Set Priority</th>
+<th class="text-center" >Set Status</th>
+<th class="text-center" >Actions</th>
+<!-- <th>UserId</th> -->
+<!-- <th>Task Id</th> -->
+</thead>
+<tbody  >
+<tr *ngFor="let task of filteredTasksList index as i "  >
+
+    <td>{{i+1}}</td>
+    <td>{{task.title}}</td>
+    <!-- <td>{{task.description}}</td> -->
+    <td   class="text-center"  >{{task.dueDate | date  }}</td>
+    <td ><button  type="button"  class="btn ms-3"  [ngClass]="task.taskPriorityId==1?'btn btn-danger':task.taskPriorityId==2?'btn btn-warning':'btn btn-secondary' "   (click)="changeTaskPriority(task)"  >{{task.taskPriorityId==1?"High":task.taskPriorityId==2?"Medium":"Low"   }} </button> </td>
+
+
+  
+    <td>
+        <button type="button"  class="btn ms-3"  [ngClass]="task.isCompleted?'btn-success ':'btn-danger '"   (click)="toggleStatus(task)" >
+            {{task.isCompleted ? 'Completed':'Pending'  }}</button>
+    </td>
+
+    <th class="text-center" >
+       
+        <button type="button"  class="btn btn-info "    [routerLink]="['/viewTask',task.taskId,task.userId]"    >View</button>
+        <button  type="button"  class="btn btn-warning ms-2 "   [routerLink]="['/editTask', task.taskId, task.userId]"   >Edit</button>
+        <button type="button"  class="btn btn-danger ms-2"     (click)="deleteTask(task.taskId,task.userId)"                 >Delete</button>
+        <!-- <button type="button"   style=" background-color: deeppink;   "  class="btn custom-pink-btn ms-2"   >Set Reminder</button> -->
+         <button 
+        type="button" 
+        class="btn ms-2" 
+        [routerLink]="['/setReminder',task.title,task.taskId,task.userId]"
+        style="background-color:#17A2B8; color:white;"
+      >
+        Set Reminder
+      </button>          
+      <!--       set reminder - taskid,userid,title    -->
+    
+    </th>
+
+    <!-- <td  hidden  >{{task.userId}}</td>
+    <td  hidden  >{{task.taskId}}</td> -->
+</tr>
+
+</tbody>
+
+</table>
+
+
+<div  *ngIf="filteredTasksList.length==0 && tasksList.length!=0"  >
+
+    <div class="mt-5" ></div>
+<h5  class="text-center  mt-5" style="color: slategrey;"   >No task found matching your search.</h5>
+
+<!-- <h5 class="text-center  mt-5" style="color: slategrey;" > No tasks were found matching your search criteria. Please try using different keywords or filters.
+</h5> -->
+
+</div>
+
+
+<div  *ngIf="tasksList.length==0"  >
+
+    <div class="mt-5" ></div>
+<h5  class="text-center  mt-5" style="color: slategrey;"   >There are no tasks for you. </h5>
+
+<!-- <h5 class="text-center  mt-5" style="color: slategrey;" > No tasks were found matching your search criteria. Please try using different keywords or filters.
+</h5> -->
+
+</div>
+
+</div>

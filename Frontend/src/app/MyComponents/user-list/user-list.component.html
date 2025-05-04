@@ -1,0 +1,84 @@
+<!-- <p>user-list works!</p> -->
+
+
+<!-- 
+
+        "userId": 1,
+        "name": "sachin pralhad kamble",
+        "email": "sachin@gmail.com",
+        "password": "sachin#123",
+        "dob": "2025-04-07",
+        "mobileNo": "7666157483",
+        "address": "At Post : Hinjewadi , Taluka : Mulshi , District : Pune",
+        "role": "user"
+-->
+
+
+
+<div class="container mt-5" >
+
+    <div style="display: flex; justify-content: space-between;  "  class="" >
+        <h3 class="text-center    " >Manage Task Manager Users</h3>      <button type="button" routerLink="/addUser"  class="btn btn-primary  btn-lg" > + Add User</button>
+  
+    </div>
+     <hr>
+<table class="table table-bordered  table-hover       " >
+
+<thead  style="color:black ;  background-color: #f5f5f5;   "          >
+<th>Sr No</th>
+<th >Name</th>
+
+<th  >Email</th>
+
+<th class="text-center" >Mobile No</th>
+<th class="text-center" >Actions</th>
+<!-- <th class="text-center"  >Address</th> -->
+<!-- <th class="text-center" >Date of birth</th> -->
+
+<!-- <th>UserId</th> -->
+<!-- <th>Task Id</th> -->
+</thead>
+<tbody      >
+<tr *ngFor="let user of usersList index as i "  >
+
+    <td   >{{i+1}}</td>
+    <td     >{{user.name}}</td>
+   
+  
+    
+
+  
+    <td  >
+    {{user.email}}    
+    </td>
+    <td  class="text-center" >{{user.mobileNo}}</td>
+
+    <td class="text-center"  >
+
+        <button  class="btn btn-info  ms-3"    [routerLink]="['/viewUser',user.userId]"                    >View</button>
+        <button  class="btn btn-warning ms-3"     [routerLink]="['/editUser',user.userId]"       >Update</button>
+        <button class="btn btn-danger ms-3 "  (click)="deleteUser(user.userId)"   >Delete</button>
+        <button class="btn btn-success ms-3 "   [routerLink]="['/assignTask',user.userId]"         >Assign Task</button>
+    </td>
+
+
+    <!-- <th>{{user.address}} </th> -->
+
+    <!-- <td>{{user.dob | date  }}</td> -->
+
+    <!-- <td  hidden >{{user.id}}</td> -->
+</tr>
+
+</tbody>
+
+</table>
+
+
+<div  *ngIf="usersList.length==0"  >
+
+<h4  class="text-center  mt-5" style="color: slategrey;"   >There are no users using task manager.</h4>
+</div>
+
+</div>
+
+

@@ -1,0 +1,89 @@
+<!-- <p>user-list works!</p> -->
+
+
+<!-- 
+
+        "userId": 1,
+        "name": "sachin pralhad kamble",
+        "email": "sachin@gmail.com",
+        "password": "sachin#123",
+        "dob": "2025-04-07",
+        "mobileNo": "7666157483",
+        "address": "At Post : Hinjewadi , Taluka : Mulshi , District : Pune",
+        "role": "user"
+-->
+
+
+
+<div class="container mt-5" >
+
+    <div style="display: flex; justify-content: space-between;  "  class="" >
+        <h3 class="text-center    " >Task Manager Admins</h3>      <button type="button" routerLink="/addAdmin"  class="btn btn-primary  btn-lg" > + Add Admin</button>
+  
+    </div>
+     <hr>
+    
+<table class="table table-bordered  table-hover     " >
+
+<thead  style="color:black ;  background-color: #f5f5f5;   "          >
+<th  >Sr No</th>
+<th  >Name</th>
+
+<th >Email</th>
+
+<th class="text-center" >Mobile No</th>
+<th  class="text-center"  >Role</th>
+<th class="text-center" >Actions</th>
+
+<!-- <th class="text-center"  >Address</th> -->
+<!-- <th class="text-center" >Date of birth</th> -->
+
+<!-- <th>UserId</th> -->
+<!-- <th>Task Id</th> -->
+</thead>
+<tbody      >
+<tr *ngFor="let admin of adminsList index as i "  >
+
+    <td   >{{i+1}}</td>
+    <td   >{{admin.name}}</td>
+   
+  
+    
+
+  
+    <td  >
+    {{admin.email}}    
+    </td>
+    <td  class="text-center"  >{{admin.mobileNo}}</td>
+
+    <td  class="text-center" >  <h6  style="color: seagreen;"  > {{admin.role}} </h6>   </td>
+
+    <td  class="text-center" >
+
+        <button  class="btn btn-info  ms-3"    [routerLink]="['/viewAdmin',admin.userId]"   >View</button>
+        <button  class="btn btn-warning ms-3"    [routerLink]="['/editAdmin',admin.userId]"     >Update</button>
+        <button class="btn btn-danger ms-3 "    [disabled]="userService.userid==admin.userId"           (click)="deleteAdmin(admin.userId)"   >Delete</button>
+   
+    </td>
+
+
+    <!-- <th>{{user.address}} </th> -->
+
+    <!-- <td>{{user.dob | date  }}</td> -->
+
+    <!-- <td  hidden >{{user.id}}</td> -->
+</tr>
+
+</tbody>
+
+</table>
+
+
+<div  *ngIf="adminsList.length==0"  >
+
+<h4  class="text-center  mt-5" style="color: slategrey;"   >There are no admins for task manager.</h4>
+</div>
+
+</div>
+
+

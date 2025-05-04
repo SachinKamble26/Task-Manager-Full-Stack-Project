@@ -1,0 +1,61 @@
+
+
+
+
+<div class="container-fluid   bg-image" >
+
+    <div class="row mt-5  d-flex align-items-center justify-content-center "   >
+
+        <h1 class="text-center  mb-3" style=" text-shadow:1px 1px 2px rgb(42, 42, 46); color:whitesmoke;  border-color: rgb(0, 0, 0); "  >Welcome To Task Manager</h1>
+        <div class="col" ></div>
+        <div class="col mt-3 " >
+          
+            <div class="card shadow-lg border-0">
+        <div class="card-body" > 
+
+
+
+  
+            <form (ngSubmit)="logIn(user)"       #loginForm="ngForm"     >    
+
+                <div class="mb -3" >
+            <label for=""  class="form-label" > Email  </label>
+            <input type="email"  placeholder="Enter your email" [(ngModel)]="user.email"   name="email"    required  class="form-control"  />
+        </div>
+
+
+        <div class="mt-3" >
+            <label for=""  class="form-label" > Password  </label>
+            <input type="password"  placeholder="Enter your password" [(ngModel)]="user.password"  name="password"   required class="form-control"  />
+        </div>
+
+        <div class="d-grid" >
+               <button type="submit"  class="btn btn-primary  form-control   mt-3"       > Log in </button> 
+        </div>
+        </form>
+
+            <!-- <h6 class="mt-3 ">If You Are New. Plase <a  routerLink="/about"   >Register</a> Here </h6> -->
+
+<!-- //    data-bs-toggle="tooltip"  -->
+<!-- data-bs-placement="top"  -->
+            <div class="text-center mt-3">
+                <small>New here? <a routerLink="/register"  data-bs-toggle="tooltip"    data-bs-placement="top"  title="Click here to register"      class="text-decoration-none">Register Now</a></small>
+                <small class="ms-3" >Forget password? <a routerLink="/resetPassword"  data-bs-toggle="tooltip"    data-bs-placement="top"  title="Click here to reset password"      class="text-decoration-none">Reset Here</a></small>
+            </div>
+
+            <!-- <div class="text-center">
+                 <small  >Forget password? <a routerLink="/register"  data-bs-toggle="tooltip"    data-bs-placement="top"  title="Click here to register"      class="text-decoration-none">Reset Now</a></small>
+            </div> -->
+
+        </div>
+        </div>
+      
+
+
+        </div>
+        <div class="col" ></div>
+
+
+    </div>
+
+</div>

@@ -1,0 +1,41 @@
+.bg-image {
+    position: relative;
+    min-height: 100vh;
+    padding-top: 60px;
+    overflow: hidden;
+  }
+  
+  .bg-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('/assets/images/5109856.jpg'); /* Use relative path if inside assets */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(99px) brightness(1); /* Blur + darken */
+    z-index: 1;
+  }
+  
+  .bg-image > * {
+    position: relative;
+    z-index: 2;
+  }
+  
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+

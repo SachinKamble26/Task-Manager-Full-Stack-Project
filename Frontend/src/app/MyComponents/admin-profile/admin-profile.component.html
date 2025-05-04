@@ -1,0 +1,80 @@
+<div class="container mt-5">
+    <!-- <h2 class="text-center mb-2  "  style="color: rgb(37, 20, 128);"  >Admin Profile</h2>
+   -->
+    <!-- Centered and narrower column -->
+    <div class="row justify-content-center  ">
+      <div >
+
+
+        <div class="card    "  style="border-radius: 10px;box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);"   >
+            <div class="card-body">
+
+
+              <h2 class="text-center mb-2  "  style="color: rgb(37, 20, 128);"  >Admin Profile</h2>
+  <hr>
+
+
+        <form (ngSubmit)="updateProfile(user)" #profileForm="ngForm">
+          
+
+          <div class="row" >  
+          <div class="col-md-6">
+            <label for="name" class="form-label"> <h6>Full Name </h6></label>
+            <input [(ngModel)]="user.name"   placeholder="Enter your full name" name="name" id="name" type="text" class="form-control" required>
+          </div>
+      
+          <div class="col-md-6">
+            <label for="email" class="form-label"><h6>Email  </h6></label>
+            <input [(ngModel)]="user.email"   placeholder="Enter your email" name="email" id="email" type="email" class="form-control" required>
+          </div>
+        </div>
+      
+
+        <div  class="row mt-1"> 
+          <div class="col-md-6">
+            <label for="dob" class="form-label"><h6>Date of Birth </h6></label>
+           
+           
+            <!-- <input   [value]="user.dob | date" readonly      name="dob" id="dob" type="date" class="form-control"> -->
+         
+            <input [value]="user.dob | date: 'd MMMM y'"   placeholder="Enter your date of birth" class="form-control" readonly>
+
+        
+        </div>
+      
+          <div class="col-md-6">
+            <label for="mobileNo" class="form-label"><h6>Mobile Number </h6></label>
+            <input [(ngModel)]="user.mobileNo"   placeholder="Enter your mobile no" name="mobileNo" id="mobileNo" type="text" class="form-control">
+          </div>
+        </div>
+
+
+
+
+
+    <div class="row mt-1" > 
+     <div class="col-md-6 ">
+            <label for="address" class="form-label"><h6>Address </h6></label>
+            <textarea [(ngModel)]="user.address"    placeholder="Enter your address"  name="address" id="address" rows="1" class="form-control"></textarea>
+          </div>
+      
+          <div class="col-md-6" >
+            <label for="role" class="form-label"><h6>Role </h6></label>
+            <input [(ngModel)]="user.role"    placeholder="Enter your role"  style="color: green;"    name="role" id="role" type="text" class="form-control" readonly>
+          </div>
+        </div>
+
+
+
+
+          <button type="submit"    class="btn btn-info w-100 mt-3 ">Update Profile</button>
+        </form>
+
+
+    </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+  

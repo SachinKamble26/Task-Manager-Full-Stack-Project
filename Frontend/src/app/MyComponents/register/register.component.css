@@ -1,0 +1,26 @@
+.bg-image {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .bg-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('/assets/images/3292752.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(10px) brightness(1); /* reasonable blur + dark */
+    z-index: 1;
+  }
+  
+  .bg-image > * {
+    position: relative;
+    z-index: 2;
+  }
+  

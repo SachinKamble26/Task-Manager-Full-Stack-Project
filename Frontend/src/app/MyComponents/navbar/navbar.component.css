@@ -1,0 +1,66 @@
+.water-button {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 23px;
+    color: #1b0404 !important;
+    background: rgba(255, 255, 255, 0.1); /* translucent background */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* subtle border */
+    border-radius: 12px;
+    backdrop-filter: blur(10px); /* glassy water effect */
+    -webkit-backdrop-filter: blur(10px);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    margin: 0 5px;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  .water-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    color: #13380e !important;
+    text-shadow: 0 0 0px #1b1818, 0 0 0px #13120f;
+  }
+
+
+  /* ---------------------------------------------------------------------------------------- */
+
+
+  .nav-btn {
+    padding: 6px 16px;
+    font-size: 17px;
+    font-weight: 500px;
+    backdrop-filter: blur(10px);
+    transition: all 0.9s ease-in-out;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    border-radius: 12px;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .nav-btn:hover,
+  .nav-btn:focus,
+  .nav-btn:active {
+    background: rgba(255, 255, 255, 0.12);  /* less white than before */
+    border-color: rgba(255, 255, 255, 0.4);
+    color: #13380e !important;
+    text-shadow: 0 0 0px #1b1818, 0 0 0px #13120f;
+    outline: none;
+    box-shadow: none;
+    -webkit-box-shadow: none !important;
+  }
+  
+
+
+  .nav-btn {
+    appearance: none;
+    -webkit-appearance: none;
+  }
+  
+
+
+  

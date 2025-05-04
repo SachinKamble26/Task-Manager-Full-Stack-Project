@@ -1,0 +1,94 @@
+
+
+
+<div class="container mt-5">
+
+   
+    <div class="row"    >
+
+        <!-- <div class="col" ></div> -->
+        <div class="col">
+            <!-- Apply shadow with a blue border color -->
+            <div class="border  p-3 shadow-lg" 
+                style=" border-radius: 10px;  box-shadow: 0 4px 20px rgba(0, 123, 255, 0.3); ">
+
+                <div class="text-center mt-1" style="display: flex; justify-content: space-between; align-items: center;">
+                    <h3 style="color: rgba(168, 10, 157, 0.8); flex-grow: 1; text-align: center;"   >View Admin</h3>
+                    <button type="button"  class="btn btn-outline   bg-light" style="margin-left: auto;" routerLink="/adminList">
+                        <h3 style="color: rgba(183, 9, 183, 0.8);"   > Back    </h3>
+                    </button>
+                </div>
+                <hr>
+
+               
+                <div >
+
+                    <div class="row   "       >  
+                    <div class="col-md-6" >
+                        <label for="" style="color: black;"> <h6>Name</h6> </label>
+                        <input type="text" class="form-control" placeholder="Task Title" [value]="user.name" readonly />
+                    </div>
+                    <div class="col-md-6" >
+                        <label for=""><h6>Email</h6></label>
+                        <input type="text"       class="form-control" [value]="user.email"  readonly />
+                    </div>
+                </div>
+
+
+                <div class="row" >  
+                <div class="col-md-6" >
+                        <label for=""><h6>Date of birth</h6></label>
+                        <input type="text" class="form-control" [value]="user.dob | date:'d MMMM y'" readonly />
+                    </div>
+                    <div class="col-md-6" >
+                        <label for=""><h6> Mobile no</h6>  </label>
+                        <input class="form-control"  paceholder="User mobile no" [value]="user.mobileNo" readonly  />
+                    </div>
+
+                </div>
+
+
+
+                    <div class="row" >  
+                    <div class="col-md-6" >
+                        <label for=""> <h6>  Address</h6>  </label>
+                        <input class="form-control"  placeholder="User address" [value]="user.address" readonly />
+                    </div>
+    
+    
+                    <div class="col-md-6" >
+                        <label for=""><h6>   Role</h6>  </label>
+                        <input class="form-control"  placeholder="User role" value="Admin"  style="color: green;" readonly />
+                    </div>
+
+                </div>
+
+
+
+                    
+                
+                   
+                </div>
+            </div>
+        </div>
+  
+<!-- 14, 14, 232, 0.6 -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
+
+
+
+
+-->

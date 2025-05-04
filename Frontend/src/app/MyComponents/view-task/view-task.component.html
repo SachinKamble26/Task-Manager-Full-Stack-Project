@@ -1,0 +1,172 @@
+<!-- <div class="container mt-5">
+
+   
+    <div class="row">
+
+     
+        <div class="col">
+         
+            <div class="border  p-3 shadow-lg" 
+                style="box-shadow: 
+                    0 0 10px rgba(0, 0, 255, 0.6),
+                    0 0 20px rgba(0, 0, 255, 0.4),
+                    0 0 30px rgba(0, 0, 255, 0.3),
+                    0 0 40px rgba(0, 0, 255, 0.2);">
+
+                <div class="text-center " style="display: flex; justify-content: space-between; align-items: center;">
+                    <h3 style="color: rgba(16, 48, 165, 0.8); flex-grow: 1; text-align: center;"   >View Task</h3>
+                    <button type="button"  class="btn btn-outline   bg-light" style="margin-left: auto;" routerLink="/taskList">
+                        <h3 style="color: rgba(17, 89, 184, 0.8);"   > Back    </h3>
+                    </button>
+                </div>
+                <hr>
+
+               
+                <div *ngIf="task">
+                    <div>
+                        <label for="" style="color: black;"> <h6>Title</h6> </label>
+                        <input type="text" class="form-control" placeholder="Task Title" [value]="task.title" readonly />
+                    </div>
+                 
+
+
+
+
+                    <div>
+                        <label for=""><h6>Due Date</h6></label>
+                        <input type="text" class="form-control" [value]="task.dueDate | date" readonly />
+                    </div>
+
+
+
+                    <div class="mt-2">
+                        <label for=""><h6>  Task Priority</h6></label>
+                        <select class="form-select"             [value]="task.taskPriorityId" aria-readonly="true" >
+                            <option value="1" style="color: red; text-decoration-color: red;  ">High</option>
+                            <option value="2" style="color: coral;">Medium</option>
+                            <option value="3" style="color: slategrey;">Low</option>
+                        </select>
+                    </div>
+                
+                    <div>
+                        <label for=""><h6>Completion Status</h6></label>
+                        <input type="text"   style="font-size: 1.10rem;"   [ngClass]="{'text-success':task.isCompleted,'text-danger':!task.isCompleted}" class="form-control" [value]="task.isCompleted ? 'Completed':'Pending'"  readonly />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col" >
+
+
+
+            <div  class="border  p-3 shadow-lg" 
+            style="box-shadow: 
+                0 0 10px rgba(218, 218, 222, 0.6),
+                0 0 20px rgba(243, 243, 245, 0.4),
+                0 0 30px rgba(234, 234, 237, 0.3),
+                0 0 40px rgba(234, 234, 238, 0.2);"    >
+                <div  >  
+                    <label for=""> <h3  style="color: rgba(16, 48, 165, 0.8);" > Description</h3></label>
+                    <textarea class="form-control"  rows="13" placeholder="Task Description" [value]="task.description" readonly></textarea>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div> -->
+
+<style>
+    .custom-box {
+        padding: 20px;
+        border-radius: 15px;
+        background: linear-gradient(145deg, #f8f9fa, #e0e5ec);
+        box-shadow: 
+            0 0 10px rgba(14, 14, 232, 0.3),
+            0 0 20px rgba(14, 14, 232, 0.2),
+            0 0 30px rgba(14, 14, 232, 0.1);
+        border: 1px solid rgba(0, 0, 255, 0.2);
+        transition: transform 0.3s ease;
+    }
+
+    .custom-box:hover {
+        transform: translateY(-5px);
+    }
+
+    .title-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .title-bar h3 {
+        flex-grow: 1;
+        text-align: center;
+        color: rgba(16, 48, 165, 0.8);
+    }
+
+    .btn-back h3 {
+        margin: 0;
+        color: rgba(17, 89, 184, 0.8);
+    }
+
+    label h6 {
+        margin-bottom: 0.25rem;
+    }
+
+    textarea[readonly], input[readonly] {
+        background-color: #f8f9fa;
+    }
+</style>
+
+<div class="container mt-5">
+    <div class="row d-flex align-items-stretch ">
+        <div class="col-md-6">
+            <div class="custom-box">
+                <div class="title-bar">
+                    <h3>View Task</h3>
+                    <button type="button" class="btn btn-outline bg-light btn-back" routerLink="/taskList">
+                        <h3>Back</h3>
+                    </button>
+                </div>
+                <hr>
+
+                <div *ngIf="task">
+                    <div>
+                        <label><h6>Title</h6></label>
+                        <input type="text" class="form-control" [value]="task.title" readonly />
+                    </div>
+
+                    <div>
+                        <label><h6>Due Date</h6></label>
+                        <input type="text" class="form-control" [value]="task.dueDate | date" readonly />
+                    </div>
+
+                    <div class="mt-2">
+                        <label><h6>Task Priority</h6></label>
+                        <select class="form-select" [value]="task.taskPriorityId" aria-readonly="true" disabled>
+                            <option value="1" style="color: red;">High</option>
+                            <option value="2" style="color: coral;">Medium</option>
+                            <option value="3" style="color: slategrey;">Low</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label><h6>Completion Status</h6></label>
+                        <input type="text" class="form-control"
+                            [ngClass]="{'text-success': task.isCompleted, 'text-danger': !task.isCompleted}"
+                            [value]="task.isCompleted ? 'Completed' : 'Pending'" readonly />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="custom-box">
+                <label><h3>Description</h3></label>
+                <textarea class="form-control" rows="12" [value]="task.description" readonly></textarea>
+            </div>
+        </div>
+    </div>
+</div>
+

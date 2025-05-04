@@ -1,0 +1,139 @@
+<!-- <h1>add-task works!</h1> -->
+<!-- "taskId": 3,
+"title": "title 3",    --
+"description": "desc 4",  ---
+"dueDate": "2025-04-11",   ---
+"isCompleted": true,     
+"userId": 1,
+"taskPriorityId": 2 -->     
+
+
+<h3 class="text-center my-3  " style="color:green; font-weight: 600; font-size: 1.8rem;">
+    Assign New Task
+   </h3>
+
+ 
+  
+
+<div class="container  mt-1 " >
+
+
+    <!-- <div class="row" ></div> -->
+    <div class="row" >
+
+
+        <!-- <div class="col" ></div> -->
+        <div class="col" >
+
+          <div   class="border p-3  shadow-lg" style="box-shadow: 4px 4px 15px rgba(0, 0, 255, 0.3);"  >
+
+            <div class="text-center mt-1" style="display: flex; justify-content: space-between; align-items: center;">
+                <h3 class="text-center my-4  " style="color: gray; font-weight: 600; font-size: 1.8rem;">
+                   <h3 style="display:inline-block; color: green; " >To : </h3> {{name}}
+                  </h3>
+                  <button type="button" class="btn btn-success" style="margin-left: auto;"  routerLink="/userList"   ><h3>Back</h3></button>
+              </div>
+            <hr>
+
+ 
+<form   (ngSubmit)="assignNewTask(createTask)" #taskForm="ngForm" > 
+    <div   > 
+            <div>
+                <label for=""><h6>Title</h6></label>
+                <input  #title="ngModel" required type="text"  class="form-control"   placeholder="Enter The Task Title" [(ngModel)]="createTask.title" name="title" />
+                <div *ngIf="title.invalid && title.touched" class="text-danger">Title is required.</div>
+                
+            </div>
+            <div>
+                <label for=""><h6>Description</h6></label>
+                <!-- <input type="text"  class="form-control" /> -->
+                <textarea #description="ngModel"  required class="form-control" rows="8" placeholder="Enter The Task Description"   [(ngModel)]="createTask.description"  name="description"    ></textarea>
+ <div *ngIf="description.invalid && description.touched"  class="text-danger" >description is required</div>
+            </div>
+            <div class="mt-2" >
+                <label for=""><h6>Select Task Priority </h6> </label>
+
+                <select #taskPriorityId="ngModel" required  name="" id=""  class=" form-select "   [(ngModel)]="createTask.taskPriorityId"  name="taskPriorityId"  style=""  >
+
+                    <option value="1" style=" color: red;font-weight: bold;"  >High</option>
+                    <option value="2" style="color: coral;font-weight: bold;"  >Medium</option>
+                    <option value="3"  style="color:slategrey;font-weight: bold;"  > Low</option>
+                </select>
+                <div *ngIf="taskPriorityId.invalid && taskPriorityId.touched" class="text-danger">Task Priority is required.</div>
+             
+               
+            </div>
+
+
+
+            <div  class="row mt-1"  >
+
+            <div class="col" >
+                <label for=""><h6>Select Due Date</h6></label>
+                <input #dueDate="ngModel" required  type="date" 
+                  
+
+                  
+                    placeholder="please select date"   
+                    [(ngModel)]="createTask.dueDate" 
+                    name="dueDate"    
+                    class="form-control" />
+                <div *ngIf="dueDate.invalid && dueDate.touched" class="text-danger">Due Date is required.</div>
+            
+                <!-- <small class="form-text text-muted">Please select a date</small> -->
+            </div>
+
+
+            <!-- <div class="col" > 
+            
+                <label   class=""  ><h6>Select Due Time</h6></label>
+                <input type="time" class="form-control"       [(ngModel)]="selectedTime"  name="selectedTime"   placeholder="Select due time for sending reminder"  />
+            </div> -->
+
+
+                <!-- <div class="col" > 
+          <div class="form-group">
+            <label for="time">Pick Time</label>
+            <input
+              id="time"
+              class="form-control"
+              [(ngModel)]="selectedTime"
+              [ngxTimepicker]="picker"
+              readonly
+            />
+            <ngx-material-timepicker #picker></ngx-material-timepicker>
+          </div>
+          </div> -->
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            <div class="mt-3" >
+                <button   [disabled]="taskForm.invalid" type="submit"  class="btn btn-success  form-control" >Assign Task</button>
+            </div>
+
+        </div>
+        </form>
+          </div>
+
+        </div>
+        <!-- <div class="col" ></div> -->
+
+    </div>
+    <!-- <div class="row" ></div> -->
+
+</div>

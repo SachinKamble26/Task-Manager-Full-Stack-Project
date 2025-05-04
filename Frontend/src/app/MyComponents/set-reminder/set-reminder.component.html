@@ -1,0 +1,80 @@
+<!-- <p>set-reminder works!</p> -->
+
+<!-- 
+{
+  "reminderDate": "2025-04-17",
+  "reminderTime": "16:16",
+  "userId": 27,
+  "taskId": 62
+
+  title 
+}
+-->
+
+<div class="container-fluid  mt-5" >
+
+    <div  style="height: 30px;" ></div>
+
+
+    <div class="row mt-3"  style="width: 1000px; margin-left: 130px;"     >
+
+        <div  class="col"  >  
+
+    <div class="card"  style="border-radius: 10px;box-shadow: 0 0 15px rgba(7, 83, 235, 0.5);" >
+
+<div class="card-body"     >
+
+<div  style="display: flex; align-items: center;  justify-content:space-between;  "   >   
+    <h4   style="color: rgb(23, 131, 219);  text-align: center; flex: 1; margin: 0;"     >Set Remainder</h4>
+    
+    <button   routerLink="/taskList"      class="btn btn-outline-info"  >Back</button>
+</div>
+ 
+    <hr  style="color: darkslategray;"  >
+
+
+
+<form action=""  (ngSubmit)="setReminder()"       #setReminderForm="ngForm"    >  
+<div>
+<label  class="form-label"  > <h6   style="color: black;"   >For Task Title</h6></label>
+<input   class="form-control"    style="color: green;"       type="text" [(ngModel)]="title" name="title"  placeholder="Task title" readonly    />
+</div>
+
+
+<div>
+    <label   class="form-label"  ><h6>Select Reminder Date</h6></label>
+
+    <input  required  type="date" 
+    placeholder="please select date"   
+       [(ngModel)]="setReminderObj.reminderDate" 
+       name="reminderDate"    
+       class="form-control" />
+   
+
+
+
+    <!-- ---------------- -->
+    </div>
+
+
+
+    <div>
+        <label   class="form-label"  ><h6>Select Reminder Time</h6></label>
+        <input type="time" class="form-control"       [(ngModel)]="setReminderObj.reminderTime"  name="reminderTime"   placeholder="Select due time for sending reminder"  />
+        </div>
+
+
+
+        <div class="mt-3" >
+          
+            <input  type="submit"     class="btn btn-info  form-control"  value="Set Reminder"        />
+            </div>
+
+        </form>
+
+
+</div>
+    </div>
+</div>
+</div>
+</div>

@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background: linear-gradient(45deg, #94e425, #37dfee, #1527ed);">
+  <div class="container-fluid water-button d-flex align-items-center">
+
+    <!-- Left: Logo / Title -->
+    <div class="d-flex align-items-center">
+      <span><h3 class="water-button" > <a (click)="home()" >Task Manager Admin Panel</a> </h3></span>
+    </div>
+
+    <!-- Center: Navigation Links -->
+    <div class="d-flex justify-content-center align-items-center flex-grow-1 ms-3 me-auto" style="height: 50px;">
+      <div class="navbar-nav">
+        <a class="nav-link active water-button" style="font-size: 20px;" routerLink="/adminPage">Home</a>
+        <a class="nav-link active water-button" style="font-size: 20px;" routerLink="/userList">User List</a>
+        <a class="nav-link active water-button" style="font-size: 20px;" routerLink="/addUser">Add User</a>
+        <a class="nav-link active water-button" style="font-size: 20px;" routerLink="/adminList">Admin List</a>
+        <a class="nav-link active water-button" style="font-size: 20px;" routerLink="/addAdmin">Add Admin</a>
+        <a class="nav-link active water-button" style="font-size: 20px;" (click)="logOut()">Log out</a>
+      </div>
+    </div>
+
+    <!-- Right: Profile Button (now pushed to far right) -->
+    <div class="d-flex align-items-center">
+      <button class="btn p-0 border-0 bg-transparent" (click)="goToProfile()" title="View Profile">
+        <img src="/assets/images/profile.jpg" alt="User Profile" class="rounded-circle" style="width: 40px; height: 40px; object-fit: cover;">
+      </button>
+    </div>
+
+  </div>
+</nav>

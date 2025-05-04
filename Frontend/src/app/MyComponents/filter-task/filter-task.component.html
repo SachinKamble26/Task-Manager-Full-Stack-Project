@@ -1,0 +1,101 @@
+
+<!-- <h1 class="text-center mt-5">filter-task component works!</h1> -->
+
+
+<!-- 1. all task 2. sort by due date 3. complete task 4.pending task 5.high 5.medium 6.low -->
+
+<div class="container  mt-5"    >
+
+    <div style="display: flex; justify-content: space-between;  " >
+        <h3 class="text-center" >Filter Task List</h3>   
+        
+        <select
+        class="form-select fw-bolder "
+        [ngClass]="getFilterColor(selectedFilter)"
+        [(ngModel)]="selectedFilter"
+        (change)="handleFilterChange(selectedFilter)"
+        style="width: 300px;    "
+      >
+        <option [ngValue]="1">All Tasks</option>
+        <option [ngValue]="2">Filter Complete Tasks</option>
+        <option [ngValue]="3">Filter Pending Tasks</option>
+        <option [ngValue]="4">Sort by Due Date</option>
+        <option [ngValue]="5">High Priority Tasks</option>
+        <option [ngValue]="6">Medium Priority Tasks</option>
+        <option [ngValue]="7">Low Priority Tasks</option>
+      </select>
+      
+
+        
+        <button type="button" routerLink="/addTask"  class="btn btn-primary  btn-lg" > + Add Task</button>
+  
+    </div>
+     <hr>
+<table class="table table-bordered  table-hover" >
+
+<thead  style="color:black ; background-color: #f5f5f5; "   >
+<th class="text-center" >Sr No</th>
+<th class="text-center" >Title</th>
+<!-- <th>Description</th> -->
+<th class="text-center" >Due Date</th>
+<th class="text-center" >Set Priority</th>
+<th class="text-center" >Set Status</th>
+<th class="text-center" >Actions</th>
+<!-- <th>UserId</th> -->
+<!-- <th>Task Id</th> -->
+</thead     >
+<tbody  >
+<tr *ngFor="let task of tasksList index as i "  >
+
+    <td>{{i+1}}</td>
+    <td>{{task.title}}</td>
+    <!-- <td>{{task.description}}</td> -->
+    <td>{{task.dueDate | date  }}</td>
+    <td ><button  type="button"  class="btn ms-3"  [ngClass]="task.taskPriorityId==1?'btn btn-danger':task.taskPriorityId==2?'btn btn-warning':'btn btn-secondary' "   (click)="changeTaskPriority(task)"  >{{task.taskPriorityId==1?"High":task.taskPriorityId==2?"Medium":"Low"   }} </button> </td>
+
+
+  
+    <td>
+        <button type="button"  class="btn ms-3"  [ngClass]="task.isCompleted?'btn-success ':'btn-danger '"   (click)="toggleStatus(task)" >
+            {{task.isCompleted ? 'Completed':'Pending'  }}</button>
+    </td>
+
+    <th>
+       
+        <button type="button"  class="btn btn-info "    [routerLink]="['/viewTask',task.taskId,task.userId]"    >View</button>
+        <button  type="button"  class="btn btn-warning ms-2 "   [routerLink]="['/editTask', task.taskId, task.userId]"   >Edit</button>
+        <button type="button"  class="btn btn-danger ms-2"     (click)="deleteTask(task.taskId,task.userId)"                 >Delete</button>
+       
+
+
+         <button 
+        type="button" 
+        class="btn ms-2" 
+        [routerLink]="['/setReminder',task.title,task.taskId,task.userId]"
+        style="background-color:#17A2B8; color:white;"
+      >
+        Set Reminder
+      </button>  
+
+
+    </th>
+
+    <!-- <td  hidden  >{{task.userId}}</td>
+    <td  hidden  >{{task.taskId}}</td> -->
+</tr>
+
+</tbody>
+
+</table>
+
+
+<div  *ngIf="tasksList.length==0"  >
+
+<h5 class="text-center  mt-5" style="color: slategrey;"   >     {{ getEmptyMessage(selectedFilter) }}</h5>
+</div>
+
+</div>
+
+
+
+  
